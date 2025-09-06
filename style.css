@@ -1,0 +1,111 @@
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansation-light {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sansation-regular {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sansation-bold {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.sansation-light-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.sansation-regular-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.sansation-bold-italic {
+  font-family: "Sansation", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.nova-round-regular {
+  font-family: "Nova Round", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+    font-family: 'sansation' ;
+}
+
+body {
+    background-color: #102040;
+    font-family: 'sansation', 'monaco', monospace;
+}
+
+.head-wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    
+}
+
+.wrapper {
+    color: aquamarine;
+    height: 100lvh;
+    display: grid;
+    border-bottom: 4px solid black;
+}
+
+
+.tekhelet {
+    color: #402D8E
+}
+
+.oxford-blue {
+    color: #102040
+}
+
+
+.periwinkle {
+    color: #C8C2EC
+}
