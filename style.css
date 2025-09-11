@@ -245,7 +245,77 @@ header::after {
 
 .wrapper {
     color: aquamarine;
-    height: 100lvh;
-    display: grid;
+    height: 80lvh;
     border-bottom: 4px solid black;
 }
+
+
+/*---------------section templates ------------------------*/
+section {
+  min-height: 100vh; /* full screen height */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+section:nth-child(even) {
+  background: #111; /* alternate background */
+}
+
+
+/*---------------rotating text circle----------------------*/
+
+#container { 
+  margin: 0%; 
+  position: fixed; 
+  width: 100%;
+}
+
+#circle { position: relative; width: 100%; padding-bottom: 50%; padding-left:100%;}
+
+#circle text { font-family: 'Helvetica Neue', Arial; font-size: 24px; font-weight: bold;}
+
+#circle svg { position: absolute; left: 0; top: 0; width: 100%; height: 540px;
+
+  -webkit-animation-name: rotate;
+     -moz-animation-name: rotate;
+      -ms-animation-name: rotate;
+       -o-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 5s;
+     -moz-animation-duration: 5s;
+      -ms-animation-duration: 5s;
+       -o-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+       -o-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+       -o-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: reverse;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes rotate {
+    from { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(360deg); }
+}
+
+#cornerSvg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 300px;           /* tiny footprint; drawing comes from viewBox */
+    height: 300px;
+    overflow: visible;    /* lets content extend onto the page */
+    pointer-events: none; /* so it won't block clicks on underlying UI */
+  }
+
